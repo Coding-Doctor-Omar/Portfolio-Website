@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{ url_for('static', filename='images/keyboard.jpg') }}" class="d-block mx-lg-auto img-fluid"
+                 alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Who am I?</h1>
+            <p class="lead">Let me first welcome you to my DevClinic, where your Python wishes can come true. I am a
+                self-taught Python programmer and a medical student with a great passion for solving real-world problems
+                through code. Whether it's building web apps, automating boring tasks, or bringing ideas to life with
+                data — I'm always excited to create, learn, and help others grow along the way. I grow stronger by
+                helping others!</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a type="button" href="{{ url_for('contact') }}" class="btn btn-dark btn-lg px-4 me-md-2">Get in
+                    Touch</a>
+                <a type="button" href="{{ url_for('projects') }}" class="btn btn-outline-secondary btn-lg px-4">Learn
+                    More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container px-4 py-5" id="icon-grid">
+    <h2 class="pb-2 border-bottom">My Skills</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+            <img src="{{ url_for('static', filename='svgs/scraper.svg') }}" alt="Scraper SVG" width="50" height="50">
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Web Scraping and Data Collection</h3>
+                <p>Involves extracting structured data from websites using HTML parsing and web scraping libraries such
+                    as requests, BeautifulSoup, and Selenium.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <img src="{{ url_for('static', filename='svgs/automation.svg') }}" alt="Scraper SVG" width="50" height="50"
+                 style="margin-right: 10px;">
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Personal Productivity Automation</h3>
+                <p>Applies scripting to automate routine or repetitive tasks, improving efficiency in personal
+                    workflows.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <img src="{{ url_for('static', filename='svgs/flask.svg') }}" alt="Scraper SVG" width="50" height="50"
+                 style="margin-right: 20px;">
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Flask-Based Web Application Development</h3>
+                <p>Centers on building web applications using Flask, including routing, templating, and handling user
+                    input through forms.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <img src="{{ url_for('static', filename='svgs/api.svg') }}" alt="Scraper SVG" width="50" height="50"
+                 style="margin-right: 10px;">
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">REST API Integration</h3>
+                <p>Covers fetching and displaying data from third-party APIs, and integrating live external data into
+                    custom web applications.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <img src="{{ url_for('static', filename='svgs/cycle.svg') }}" alt="Scraper SVG" width="50" height="50">
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Text Encoding and Decoding</h3>
+                <p>Involves using string manipulation, conditionals, and dictionaries to convert between different
+                    representations of text, such as translating regular text into Morse code and vice versa.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <img src="{{ url_for('static', filename='svgs/data_analysis.svg') }}" alt="Scraper SVG" width="50"
+                 height="50" style="margin-right: 10px;">
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Data Visualization and Trend Analysis</h3>
+                <p>Involves cleaning, analyzing, and visualizing large datasets to reveal patterns and insights over
+                    time.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <img src="{{ url_for('static', filename='svgs/image.svg') }}" alt="Scraper SVG" width="50"
+                 height="50" style="margin-right: 20px;">
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Image Processing and GUI Development</h3>
+                <p>Involves working with image manipulation libraries and creating user interfaces using GUI frameworks
+                    like Tkinter.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <img src="{{ url_for('static', filename='svgs/pending.svg') }}" alt="Scraper SVG" width="50"
+                 height="50" style="margin-right: 10px;">
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Artificial Intelligence and Machine Learning</h3>
+                <p>Not currently a skill, only an area of interest...</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

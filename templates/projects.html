@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Example Projects</h1>
+        <p class="lead text-muted">Need Proof? Below are some examples of previous projects I have done. You can make
+            this library grow larger by sending me your python wishes!</p>
+        <p>
+            <a href="{{ url_for('contact') }}" class="btn btn-dark">Send Me Your Wishes</a>
+            <a href="https://github.com/Coding-Doctor-Omar" target="_blank" class="btn btn-outline-secondary">View More
+                Projects on GitHub</a>
+        </p>
+    </div>
+</section>
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"
+                         data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                         alt="Thumbnail [100%x225]"
+                         src="{{ url_for('static', filename='images/Morse_Translator_Screenshot.jpg') }}"
+                         data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                    <div class="card-body">
+                        <p class="card-text">A text-based Morse code translator that takes any Morse code and translates it to text, or vice versa.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://github.com/Coding-Doctor-Omar/Morse-Translator" target="_blank" class="btn btn-sm btn-outline-secondary">View GitHub Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
