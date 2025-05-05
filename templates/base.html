@@ -20,24 +20,25 @@
             Dr. Omar's DevClinic
         </span>
       </a>
-
-      <ul class="nav nav-pills">
+    <div class="d-flex flex-column flex-sm-row justify-content-center">
+      <ul class="nav nav-pills flex-column flex-sm-row">
         {% if page_name == 'Home' %}
-        <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item mb-2 mb-sm-0"><a href="{{ url_for('home') }}" class="nav-link active" aria-current="page">Home</a></li>
         {% else %}
-        <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item mb-2 mb-sm-0"><a href="{{ url_for('home') }}" class="nav-link" aria-current="page">Home</a></li>
         {% endif %}
         {% if page_name == 'Projects' %}
-        <li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link active">My Python Projects</a></li>
+        <li class="nav-item mb-2 mb-sm-0"><a href="{{ url_for('projects') }}" class="nav-link active">My Python Projects</a></li>
         {% else %}
-        <li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link">My Python Projects</a></li>
+        <li class="nav-item mb-2 mb-sm-0"><a href="{{ url_for('projects') }}" class="nav-link">My Python Projects</a></li>
         {% endif %}
         {% if page_name == 'Contact' %}
-        <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link active">Contact Me</a></li>
+        <li class="nav-item mb-2 mb-sm-0"><a href="{{ url_for('contact') }}" class="nav-link active">Contact Me</a></li>
         {% else %}
-        <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact Me</a></li>
+        <li class="nav-item mb-2 mb-sm-0"><a href="{{ url_for('contact') }}" class="nav-link">Contact Me</a></li>
         {% endif %}
       </ul>
+    </div>
     </header>
   </div>
   {% block content %}{% endblock %}
